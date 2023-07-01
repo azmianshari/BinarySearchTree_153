@@ -55,4 +55,7 @@ public:
 				currentNode = currentNode->rightchild;
 		}
 	}
+	void Inorder(Node* ptr) {
+
+	}
 };
