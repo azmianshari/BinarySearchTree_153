@@ -33,7 +33,16 @@ public:
 		Node* currentNode = NULL;
 		search(element, parent, currentNode); //Mencari node yang akan menjadi induk dari node baru.
 
-		
+		if (parent == NULL) { //Jika parent bernilai NULL (Tree Empty)
+			ROOT = newNode;
+			return;
+		}
+		if (element < parent->info) { //Jika nilai field dari node baru kurang dari parent
+			parent->leftchild = newNode; //Buat leftchild dari parent menunjuk ke node baru
+		}
+		else if (element > parent->info) {//Jika nilai field dari node baru lebih dari parent
+			parent->rightchild = newNode; //Buat rightchild dari parent menunjuk ke node baru
+		}
 	}
-	
+	void search(string element, Node*& parent, Node*& currentNode){}
 };
