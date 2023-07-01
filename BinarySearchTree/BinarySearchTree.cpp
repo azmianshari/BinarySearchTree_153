@@ -24,6 +24,7 @@ public:
 		ROOT = NULL; //Menginisialisasi ROOT ke null.
 	}
 	void insert(string element) {
+		Node* newNode = new Node(element, NULL, NULL); //Alokasi memori untuk new node
 		
 	}
 	
