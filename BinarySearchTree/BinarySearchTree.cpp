@@ -26,6 +26,7 @@ public:
 	void insert(string element) {
 		Node* newNode = new Node(element, NULL, NULL); //Alokasi memori untuk new node
 		newNode->info = element; //Menetapkan nilai data field ke new node 
+		newNode->leftchild = NULL; //Mengarahkan leftchild new node ke NULL
 		
 	}
 	
