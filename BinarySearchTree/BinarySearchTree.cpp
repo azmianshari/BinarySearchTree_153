@@ -29,6 +29,10 @@ public:
 		newNode->leftchild = NULL; //Mengarahkan leftchild new node ke NULL
 		newNode->rightchild = NULL; //Mengarahkan rightchild new node ke NULL
 
+		Node* parent = NULL;
+		Node* currentNode = NULL;
+		search(element, parent, currentNode); //Mencari node yang akan menjadi induk dari node baru.
+
 		
 	}
 	
