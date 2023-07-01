@@ -18,4 +18,13 @@ public:
 
 class BinaryTree {
 public:
+	Node* ROOT;
+	
+	BinaryTree() {
+		ROOT = NULL; //Menginisialisasi ROOT ke null.
+	}
+	void insert(string element) {
+		
+	}
+	
 };
