@@ -66,4 +66,7 @@ public:
 			Inorder(ptr->rightchild);
 		}
 	}
+	void Preorder(Node* ptr) {
+
+	}
 };
